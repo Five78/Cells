@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ExtendedCoroutine
 {
+    //Обертка для Coroutine
+
     public MonoBehaviour Owner { get; private set; }
     public Coroutine Coroutine { get; private set; }
 

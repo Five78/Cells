@@ -4,7 +4,11 @@ using UnityEngine;
 [RequireComponent(typeof(CanvasGroup))]
 public class PanelAnimation : MonoBehaviour
 {
+    //Анимация для открытия/закратия панелей в UI
+
+    //Коротина, которая хранит анимацию
     private ExtendedCoroutine changeVisibility;
+    //Переменная нужна для AndroidbackButton
     public static bool IsAnyAnimationRunning { get; private set; }
 
     [SerializeField] private CanvasGroup canvasGroup;
