@@ -6,19 +6,21 @@ using UnityEngine.UI;
 public class CellComponent : MonoBehaviour
 {
     private Image _image;
-    private GameSession _session;
+    public bool ChangedTheColor { get; private set; } = false;
 
     private void Start()
     {
         _image = GetComponent<Image>();
-        _session = FindObjectOfType<GameSession>();
     }
 
-    [ContextMenu("Change!")]
-    public void ChangeColor()
+    public void ChangeColor(Color Playercolor)
     {
+        if (ChangedTheColor) return;
+        
         var color = _image.color;
         color.a = 1f;
-        _image.color = _session.Player1;
+        
+        _image.color = Playercolor;
+        ChangedTheColor = true;
     }
 }

@@ -6,6 +6,8 @@ public class StickListener : MonoBehaviour
     private Image _image;
     private GameController _controller;
 
+    public bool Standing { get; private set; } = false;
+
     private void Start()
     {
         _image = GetComponent<Image>();
@@ -18,9 +20,13 @@ public class StickListener : MonoBehaviour
         color.a = 1f;
 
         _image.color = _controller.WhoseMoveNow();
-
+        
         var button = GetComponent<Button>();
         button.interactable = false;
+        
+        Standing = true;
+        
+        _controller.MoveIsMade();
     }
 
 }
