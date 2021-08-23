@@ -1,0 +1,1532 @@
+fileFormatVersion: 2
+guid: 824a9f6bc57b7584b9cd54e0285ce908
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1955069034229737429
+    second: buttons_n_fields_0
+  - first:
+      213: 6970607996303600879
+    second: buttons_n_fields_1
+  - first:
+      213: -7816150074331906944
+    second: buttons_n_fields_2
+  - first:
+      213: 3783383852533077970
+    second: buttons_n_fields_3
+  - first:
+      213: -2561109707895249396
+    second: buttons_n_fields_4
+  - first:
+      213: 7249794249738518595
+    second: buttons_n_fields_5
+  - first:
+      213: -5140661435049479182
+    second: buttons_n_fields_6
+  - first:
+      213: 8846972155749371831
+    second: buttons_n_fields_7
+  - first:
+      213: 126349647835168028
+    second: buttons_n_fields_8
+  - first:
+      213: 2834423268708283382
+    second: buttons_n_fields_9
+  - first:
+      213: 6232566121358940570
+    second: buttons_n_fields_10
+  - first:
+      213: 2740613971002449575
+    second: buttons_n_fields_11
+  - first:
+      213: 6513743704199261433
+    second: buttons_n_fields_12
+  - first:
+      213: 4340088425307839901
+    second: buttons_n_fields_13
+  - first:
+      213: 6375128157048923637
+    second: buttons_n_fields_14
+  - first:
+      213: -2234463870174757767
+    second: buttons_n_fields_15
+  - first:
+      213: -5121376064514505469
+    second: buttons_n_fields_16
+  - first:
+      213: -3861808208920948178
+    second: buttons_n_fields_17
+  - first:
+      213: -7381100289100499802
+    second: buttons_n_fields_18
+  - first:
+      213: -44739035340208756
+    second: buttons_n_fields_19
+  - first:
+      213: -1350486361519657734
+    second: buttons_n_fields_20
+  - first:
+      213: -5010820332572988122
+    second: buttons_n_fields_21
+  - first:
+      213: 1321622019310402700
+    second: buttons_n_fields_22
+  - first:
+      213: -6628225683443531316
+    second: buttons_n_fields_23
+  - first:
+      213: -8444511985009415181
+    second: buttons_n_fields_24
+  - first:
+      213: -2321009151102106353
+    second: buttons_n_fields_25
+  - first:
+      213: 8109325072833636106
+    second: buttons_n_fields_26
+  - first:
+      213: -5944916886539245879
+    second: buttons_n_fields_27
+  - first:
+      213: -8995999809115720467
+    second: buttons_n_fields_28
+  - first:
+      213: -7703649826374050447
+    second: buttons_n_fields_29
+  - first:
+      213: 1882912734810901900
+    second: buttons_n_fields_30
+  - first:
+      213: -5992784452476905915
+    second: buttons_n_fields_31
+  - first:
+      213: 8367106208746705472
+    second: buttons_n_fields_32
+  - first:
+      213: 1277550450154980562
+    second: buttons_n_fields_33
+  - first:
+      213: -1121199900703673155
+    second: buttons_n_fields_34
+  - first:
+      213: 3750614706124868601
+    second: buttons_n_fields_35
+  - first:
+      213: 6232019564909171099
+    second: buttons_n_fields_36
+  - first:
+      213: 6639575804669236925
+    second: buttons_n_fields_37
+  - first:
+      213: 4025573376253796388
+    second: buttons_n_fields_38
+  - first:
+      213: -6140188136485099660
+    second: buttons_n_fields_39
+  - first:
+      213: 1896520376247395262
+    second: buttons_n_fields_40
+  - first:
+      213: -8148167944522177564
+    second: buttons_n_fields_41
+  - first:
+      213: 1003441791441967138
+    second: buttons_n_fields_42
+  - first:
+      213: -513612208884100421
+    second: buttons_n_fields_43
+  - first:
+      213: -4117341592629090145
+    second: buttons_n_fields_44
+  - first:
+      213: -6136216484702462747
+    second: buttons_n_fields_45
+  - first:
+      213: -8170575427480837873
+    second: buttons_n_fields_46
+  - first:
+      213: 6677253128825244383
+    second: buttons_n_fields_47
+  - first:
+      213: -3213929491179158582
+    second: buttons_n_fields_48
+  - first:
+      213: 7180892891067444335
+    second: buttons_n_fields_49
+  - first:
+      213: 7241500642773259133
+    second: buttons_n_fields_50
+  - first:
+      213: -1759763683828752391
+    second: buttons_n_fields_51
+  - first:
+      213: 9209824480111837355
+    second: buttons_n_fields_52
+  - first:
+      213: 7106429572782403198
+    second: buttons_n_fields_53
+  - first:
+      213: -8419427298333180531
+    second: buttons_n_fields_54
+  - first:
+      213: -7602073806180299361
+    second: buttons_n_fields_55
+  - first:
+      213: -495222853233389007
+    second: buttons_n_fields_56
+  - first:
+      213: -3482050948619384914
+    second: buttons_n_fields_57
+  - first:
+      213: -3884994788616291032
+    second: buttons_n_fields_58
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: buttons_n_fields_0
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 3959
+        width: 898
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d721a0adecc12b10800000000000000
+      internalID: 1955069034229737429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_1
+      rect:
+        serializedVersion: 2
+        x: 2543
+        y: 3913
+        width: 515
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fec6c207a039cb060800000000000000
+      internalID: 6970607996303600879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_2
+      rect:
+        serializedVersion: 2
+        x: 3234
+        y: 3920
+        width: 260
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08cbd4c4be4778390800000000000000
+      internalID: -7816150074331906944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_3
+      rect:
+        serializedVersion: 2
+        x: 3677
+        y: 3788
+        width: 260
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d7de239197418430800000000000000
+      internalID: 3783383852533077970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_4
+      rect:
+        serializedVersion: 2
+        x: 4137
+        y: 3785
+        width: 260
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c06691e3a4c157cd0800000000000000
+      internalID: -2561109707895249396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_5
+      rect:
+        serializedVersion: 2
+        x: 4576
+        y: 3785
+        width: 260
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 340855685717c9460800000000000000
+      internalID: 7249794249738518595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_6
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 3682
+        width: 898
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f3735549a3b8a8b0800000000000000
+      internalID: -5140661435049479182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_7
+      rect:
+        serializedVersion: 2
+        x: 2543
+        y: 3699
+        width: 515
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bf86396d42c6ca70800000000000000
+      internalID: 8846972155749371831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_8
+      rect:
+        serializedVersion: 2
+        x: 3234
+        y: 3672
+        width: 260
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1df5b4d552e0c100800000000000000
+      internalID: 126349647835168028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_9
+      rect:
+        serializedVersion: 2
+        x: 2572
+        y: 3520
+        width: 34
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f3757a02f4e55720800000000000000
+      internalID: 2834423268708283382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_10
+      rect:
+        serializedVersion: 2
+        x: 2996
+        y: 3520
+        width: 34
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a99dbb6add58e7650800000000000000
+      internalID: 6232566121358940570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_11
+      rect:
+        serializedVersion: 2
+        x: 3677
+        y: 3398
+        width: 260
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aed210e2ed980620800000000000000
+      internalID: 2740613971002449575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_12
+      rect:
+        serializedVersion: 2
+        x: 4125
+        y: 3388
+        width: 282
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fcebbe3367756a50800000000000000
+      internalID: 6513743704199261433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_13
+      rect:
+        serializedVersion: 2
+        x: 4566
+        y: 3398
+        width: 284
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9d12449d671b3c30800000000000000
+      internalID: 4340088425307839901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_14
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 3386
+        width: 782
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f5ed7e2841097850800000000000000
+      internalID: 6375128157048923637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_15
+      rect:
+        serializedVersion: 2
+        x: 2199
+        y: 3364
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97cf9c2e2f69df0e0800000000000000
+      internalID: -2234463870174757767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_16
+      rect:
+        serializedVersion: 2
+        x: 2548
+        y: 3092
+        width: 22
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 305cc618a973de8b0800000000000000
+      internalID: -5121376064514505469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_17
+      rect:
+        serializedVersion: 2
+        x: 2803
+        y: 3087
+        width: 22
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e22549c05e9186ac0800000000000000
+      internalID: -3861808208920948178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_18
+      rect:
+        serializedVersion: 2
+        x: 3673
+        y: 2983
+        width: 281
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a4b1a0d460119990800000000000000
+      internalID: -7381100289100499802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_19
+      rect:
+        serializedVersion: 2
+        x: 4106
+        y: 2983
+        width: 284
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8504fa951e016ff0800000000000000
+      internalID: -44739035340208756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_20
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 2776
+        width: 27
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afc6c933fcb124de0800000000000000
+      internalID: -1350486361519657734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_21
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 2779
+        width: 29
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62daeabb47df57ab0800000000000000
+      internalID: -5010820332572988122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_22
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 2013
+        width: 973
+        height: 973
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8cb45c6938575210800000000000000
+      internalID: 1321622019310402700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_23
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 2011
+        width: 973
+        height: 970
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc14a37dbdfc304a0800000000000000
+      internalID: -6628225683443531316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_24
+      rect:
+        serializedVersion: 2
+        x: 3682
+        y: 2605
+        width: 260
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fb2cff27111fca80800000000000000
+      internalID: -8444511985009415181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_25
+      rect:
+        serializedVersion: 2
+        x: 4113
+        y: 2605
+        width: 260
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f05c02c697e1acfd0800000000000000
+      internalID: -2321009151102106353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_26
+      rect:
+        serializedVersion: 2
+        x: 4513
+        y: 2605
+        width: 260
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a07ea6e403c1a8070800000000000000
+      internalID: 8109325072833636106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_27
+      rect:
+        serializedVersion: 2
+        x: 3639
+        y: 2288
+        width: 195
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c66b96d6996f7da0800000000000000
+      internalID: -5944916886539245879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_28
+      rect:
+        serializedVersion: 2
+        x: 3988
+        y: 2297
+        width: 178
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4fc2226d9c72380800000000000000
+      internalID: -8995999809115720467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_29
+      rect:
+        serializedVersion: 2
+        x: 4313
+        y: 2297
+        width: 181
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17d99f07c43271590800000000000000
+      internalID: -7703649826374050447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_30
+      rect:
+        serializedVersion: 2
+        x: 4626
+        y: 2290
+        width: 200
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8d867df723712a10800000000000000
+      internalID: 1882912734810901900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_31
+      rect:
+        serializedVersion: 2
+        x: 3574
+        y: 2020
+        width: 154
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54651a6aa4a55dca0800000000000000
+      internalID: -5992784452476905915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_32
+      rect:
+        serializedVersion: 2
+        x: 3935
+        y: 2001
+        width: 159
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 042105a14ceed1470800000000000000
+      internalID: 8367106208746705472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_33
+      rect:
+        serializedVersion: 2
+        x: 4318
+        y: 1999
+        width: 135
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d4c02c9d55cab110800000000000000
+      internalID: 1277550450154980562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_34
+      rect:
+        serializedVersion: 2
+        x: 4701
+        y: 2006
+        width: 58
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db4ba5471a2b070f0800000000000000
+      internalID: -1121199900703673155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_35
+      rect:
+        serializedVersion: 2
+        x: 4783
+        y: 2006
+        width: 57
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fbcdef143cdc0430800000000000000
+      internalID: 3750614706124868601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_36
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 1775
+        width: 22
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9112bf86c49c7650800000000000000
+      internalID: 6232019564909171099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_37
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1758
+        width: 24
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db696903403842c50800000000000000
+      internalID: 6639575804669236925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_38
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 908
+        width: 973
+        height: 973
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 420a0e448a5bdd730800000000000000
+      internalID: 4025573376253796388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_39
+      rect:
+        serializedVersion: 2
+        x: 3646
+        y: 1712
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 477ecb60c6ba9caa0800000000000000
+      internalID: -6140188136485099660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_40
+      rect:
+        serializedVersion: 2
+        x: 3892
+        y: 1712
+        width: 383
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb32487eb3bc15a10800000000000000
+      internalID: 1896520376247395262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_41
+      rect:
+        serializedVersion: 2
+        x: 4722
+        y: 1712
+        width: 126
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e3e780ec64ebee80800000000000000
+      internalID: -8148167944522177564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_42
+      rect:
+        serializedVersion: 2
+        x: 2387
+        y: 1450
+        width: 828
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2281eab2ef0fced00800000000000000
+      internalID: 1003441791441967138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_43
+      rect:
+        serializedVersion: 2
+        x: 3465
+        y: 1454
+        width: 27
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb2d821da684fd8f0800000000000000
+      internalID: -513612208884100421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_44
+      rect:
+        serializedVersion: 2
+        x: 3567
+        y: 1454
+        width: 26
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f98e668d2a34cd6c0800000000000000
+      internalID: -4117341592629090145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_45
+      rect:
+        serializedVersion: 2
+        x: 3663
+        y: 1454
+        width: 29
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ecd9644e97c7daa0800000000000000
+      internalID: -6136216484702462747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_46
+      rect:
+        serializedVersion: 2
+        x: 3889
+        y: 1435
+        width: 388
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f01287230f84c9e80800000000000000
+      internalID: -8170575427480837873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_47
+      rect:
+        serializedVersion: 2
+        x: 4720
+        y: 1433
+        width: 125
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fda8ef2d75e5aac50800000000000000
+      internalID: 6677253128825244383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_48
+      rect:
+        serializedVersion: 2
+        x: 2387
+        y: 1074
+        width: 828
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac34d19e724d563d0800000000000000
+      internalID: -3213929491179158582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_49
+      rect:
+        serializedVersion: 2
+        x: 3603
+        y: 1209
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6ce336d908a7a360800000000000000
+      internalID: 7180892891067444335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_50
+      rect:
+        serializedVersion: 2
+        x: 3634
+        y: 1209
+        width: 26
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d73534da77afe7460800000000000000
+      internalID: 7241500642773259133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_51
+      rect:
+        serializedVersion: 2
+        x: 3665
+        y: 1209
+        width: 24
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ff11c0d0401497e0800000000000000
+      internalID: -1759763683828752391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_52
+      rect:
+        serializedVersion: 2
+        x: 3887
+        y: 1161
+        width: 963
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba043c4a19edfcf70800000000000000
+      internalID: 9209824480111837355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_53
+      rect:
+        serializedVersion: 2
+        x: 3615
+        y: 961
+        width: 70
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7ea6038b0c1f9260800000000000000
+      internalID: 7106429572782403198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_54
+      rect:
+        serializedVersion: 2
+        x: 3892
+        y: 939
+        width: 383
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8dbf9eea7f282b80800000000000000
+      internalID: -8419427298333180531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_55
+      rect:
+        serializedVersion: 2
+        x: 4722
+        y: 939
+        width: 126
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9d425a9622008690800000000000000
+      internalID: -7602073806180299361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_56
+      rect:
+        serializedVersion: 2
+        x: 3887
+        y: 698
+        width: 963
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1325e54507d9029f0800000000000000
+      internalID: -495222853233389007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_57
+      rect:
+        serializedVersion: 2
+        x: 3889
+        y: 482
+        width: 388
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea7cab56c154dafc0800000000000000
+      internalID: -3482050948619384914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_n_fields_58
+      rect:
+        serializedVersion: 2
+        x: 4720
+        y: 482
+        width: 125
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82d3846c2d9b51ac0800000000000000
+      internalID: -3884994788616291032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 1961536855616397808}
   - component: {fileID: 1961536855616397812}
   - component: {fileID: 1961536855616397811}
-  - component: {fileID: 1961536855616397809}
-  - component: {fileID: 1961536855616397810}
+  - component: {fileID: 1792843510420850842}
+  - component: {fileID: 7311390777964719583}
   m_Layer: 5
   m_Name: Stick
   m_TagString: Untagged
@@ -76,7 +76,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!61 &1961536855616397809
+--- !u!61 &1792843510420850842
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -86,7 +86,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -100,9 +100,9 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5, y: 118}
+  m_Size: {x: 120, y: 22}
   m_EdgeRadius: 0
---- !u!114 &1961536855616397810
+--- !u!114 &7311390777964719583
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -114,4 +114,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41293bd18715fef49886e78f49b866ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: {x: 22, y: 22}

@@ -51,4 +51,9 @@ public class AndroidBackButton : MonoBehaviour
             activity.Call<bool>("moveTaskToBack", true);
         }
     }
+
+    private void OnDestroy()
+    {
+        GoBack -= MoveApplicationToBack;
+    }
 }
