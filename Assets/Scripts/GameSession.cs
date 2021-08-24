@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class GameSession : MonoBehaviour
 {
-    [SerializeField] private int _Count;
     [SerializeField] private float _timer;
 
     [SerializeField] private Color _player1;
@@ -23,14 +22,13 @@ public class GameSession : MonoBehaviour
 
     public int[] PlayersPoints { get; private set; } = new int[4];
 
-    public int QuantityOfPlayers { get; private set; } = 4;
+    public int QuantityOfPlayers { get; private set; } = 2;
 
     private void Awake()
     {
-        QuantityOfPlayers = _Count;
         ClearPoints();
 
-        //DontDestroyOnLoad(this);
+        DontDestroyOnLoad(this);
     }
 
     public void SetPoint(int index)
@@ -38,7 +36,12 @@ public class GameSession : MonoBehaviour
         PlayersPoints[index] += 1;
     }
 
-    private void ClearPoints()
+    public void SetQuantityOfPlayers(int count)
+    {
+        QuantityOfPlayers = count;
+    }
+
+    public void ClearPoints()
     {
         for (int i = 0; i < PlayersPoints.Length; i++)
         {

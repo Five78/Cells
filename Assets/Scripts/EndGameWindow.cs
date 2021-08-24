@@ -31,6 +31,7 @@ public class EndGameWindow : MonoBehaviour
 
     public void OnExit()
     {
+        FindObjectOfType<GameSession>().ClearPoints();
         SceneManager.LoadScene("MainMenu");
     }
 }
