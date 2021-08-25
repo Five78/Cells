@@ -8,15 +8,18 @@ using UnityEngine.SceneManagement;
 public class CreatingGameController : MonoBehaviour
 {
     [SerializeField] private Slider _countPlayer;
-    
+    [SerializeField] private GameObject[] _playerList;
+
     private Animator _animator;
     private GameSession _session;
     private int _mode = 0;
+    private int _sliderValue;
 
     private void Start()
     {
         _animator = GetComponent<Animator>();
         _session = FindObjectOfType<GameSession>();
+        _sliderValue = (int)_countPlayer.value;
     }
 
     public void ActiveMode(int mode)
@@ -29,14 +32,18 @@ public class CreatingGameController : MonoBehaviour
         switch (_mode)
         {
             case 0:
-                
+
                 break;
             case 1:
-                
+
                 break;
             case 2:
-                _session.SetQuantityOfPlayers((int)_countPlayer.value);
-                SceneManager.LoadScene("Game");
+                if ((int)_countPlayer.value > 1)
+                {
+                    _session.SetQuantityOfPlayers((int)_countPlayer.value);
+                    SceneManager.LoadScene("Game");
+                }
+
                 break;
         }
     }
@@ -49,6 +56,20 @@ public class CreatingGameController : MonoBehaviour
     public void OnCloseAnimatorComplete()
     {
         Destroy(gameObject);
+    }
+
+    public void Update()
+    {
+        if(_sliderValue != (int)_countPlayer.value)
+        {
+            _sliderValue = (int)_countPlayer.value;
+            foreach (var item in _playerList)
+                item.SetActive(false);
+            for (int i = 0; i < _sliderValue; i++)
+            {
+                _playerList[i].SetActive(true);
+            }
+        }
     }
 }
 

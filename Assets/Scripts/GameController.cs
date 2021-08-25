@@ -59,8 +59,6 @@ public class GameController : MonoBehaviour
 
     public void MoveIsMade()
     {
-        
-
         _playerMovesAgain = false;
         CheckingTheCell();
         
@@ -74,8 +72,7 @@ public class GameController : MonoBehaviour
             _playerSelected[_count - 1].SetActive(false);
             ChangeMove();
             _playerSelected[_count - 1].SetActive(true);
-        }
-        
+        }  
     }
 
     private IEnumerator StartTimer()
