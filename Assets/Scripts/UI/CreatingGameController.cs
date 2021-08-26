@@ -21,7 +21,7 @@ public class CreatingGameController : MonoBehaviour
         _session = FindObjectOfType<GameSession>();
         _sliderValue = (int)_countPlayer.value;
     }
-
+    
     public void ActiveMode(int mode)
     {
         _mode = mode;
