@@ -31,5 +31,4 @@ public class MainMenuController : MonoBehaviour
         CreateWindow("ShopWindow");
     }
 
-
 }

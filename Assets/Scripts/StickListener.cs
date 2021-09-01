@@ -25,7 +25,6 @@ public class StickListener : MonoBehaviour
         button.interactable = false;
         
         Standing = true;
-        
         _controller.MoveIsMade();
     }
 

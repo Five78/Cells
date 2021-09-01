@@ -7,31 +7,33 @@ using UnityEngine.SceneManagement;
 public class EndGameWindow : MonoBehaviour
 {
     [SerializeField] private Text[] _players;
+    private GameSession _session;
 
     private void OnEnable()
     {
-        var session = FindObjectOfType<GameSession>();
-        var count = session.QuantityOfPlayers;
+        _session = GameSession.Instance;
+        var count = _session.QuantityOfPlayers;
         int max = 0;
         int indexMax = 0;
 
         for (int i = 0; i < count; i++)
         {
             _players[i].gameObject.SetActive(true);
-            _players[i].text = $"pl{i + 1} : {session.PlayersPoints[i]}";
-            if (session.PlayersPoints[i] > max)
+            _players[i].text = $"pl{i + 1} : {_session.PlayersPoints[i]}";
+            if (_session.PlayersPoints[i] > max)
             {
-                max = session.PlayersPoints[i];
+                max = _session.PlayersPoints[i];
                 indexMax = i;
             }                
         }
 
-        _players[indexMax].color = session.Player1;
+        _players[indexMax].color = _session.Player1;
     }
 
     public void OnExit()
     {
-        FindObjectOfType<GameSession>().ClearPoints();
+        _session.ClearPoints();
+        _session.DestroySession();
         SceneManager.LoadScene("MainMenu");
     }
 }

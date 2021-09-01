@@ -12,7 +12,7 @@ public class GameSession : MonoBehaviour
     [SerializeField] private Color _player2;
     [SerializeField] private Color _player3;
     [SerializeField] private Color _player4;
-
+    public static GameSession Instance { get; private set; }
     public float Timer => _timer;
 
     public Color Player1 => _player1;
@@ -27,6 +27,7 @@ public class GameSession : MonoBehaviour
     private void Awake()
     {
         ClearPoints();
+        Instance = this;
 
         DontDestroyOnLoad(this);
     }
@@ -47,5 +48,15 @@ public class GameSession : MonoBehaviour
         {
             PlayersPoints[i] = 0;
         }
+    }
+
+    public void DestroySession()
+    {
+        Destroy(gameObject);
+    }
+    private void OnDestroy()
+    {
+        if (Instance == this)
+            Instance = null;
     }
 }

@@ -2,7 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Object = UnityEngine.Object;
 
 public class GameController : MonoBehaviour
 {
@@ -24,9 +26,16 @@ public class GameController : MonoBehaviour
 
     private void Start()
     {
-        _session = FindObjectOfType<GameSession>();
+        _session = GameSession.Instance;
         _count = 1;
 
+        if (_session == null)
+        {
+            var sessin = Resources.Load<GameObject>("GameSession");
+            Object.Instantiate(sessin);
+            _session = GameSession.Instance;
+        }
+        
         for (int i = 0; i < _session.QuantityOfPlayers; i++)
         {
             _playerIcon[i].SetActive(true);
@@ -35,7 +44,7 @@ public class GameController : MonoBehaviour
         _countPoint = _cells.Length;
 
         _playerSelected[0].SetActive(true);
-        _timer.text = "00:00";
+        _timer.text = "00";
         _time = _session.Timer;
         StartCoroutine(StartTimer());
     }
@@ -75,15 +84,18 @@ public class GameController : MonoBehaviour
         }  
     }
 
+
+    private float _delay;
     private IEnumerator StartTimer()
     {
-        var delay = _time;
-        while (delay >= 0)
+        _delay = _time;
+        _time = _session.Timer;
+        while (_delay >= 0)
         {
-            _timer.text = $"{00}:{delay}";
-            delay--;
+            _timer.text = $"{_delay}";
+            _delay--;
             yield return new WaitForSeconds(1f);
-        }
+        }        
         MoveIsMade();
     }
 
@@ -139,6 +151,33 @@ public class GameController : MonoBehaviour
             if (_countPoint == 0)
                 EndGame();
         }
+    }
+
+    public void OnPause()
+    {
+        _time = _delay;
+        StopAllCoroutines();
+    }
+
+    public void OnResume()
+    {
+        StartCoroutine(StartTimer());
+    }
+
+    public void BackToMenu()
+    {
+        _session.ClearPoints();
+        _session.DestroySession();
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void OnSettingWindow()
+    {
+        string path = "SettingWindow";
+        var window = Resources.Load<GameObject>(path);
+        var canvas = GameObject.FindWithTag("UI").GetComponent<Canvas>();
+
+        Object.Instantiate(window, canvas.transform);
     }
 
     private void EndGame()

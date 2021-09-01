@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Object = UnityEngine.Object;
 
 public class CreatingGameController : MonoBehaviour
 {
@@ -32,10 +33,8 @@ public class CreatingGameController : MonoBehaviour
         switch (_mode)
         {
             case 0:
-
                 break;
             case 1:
-
                 break;
             case 2:
                 if ((int)_countPlayer.value > 1)
@@ -43,7 +42,6 @@ public class CreatingGameController : MonoBehaviour
                     _session.SetQuantityOfPlayers((int)_countPlayer.value);
                     SceneManager.LoadScene("Game");
                 }
-
                 break;
         }
     }
@@ -57,6 +55,16 @@ public class CreatingGameController : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
+    public void OnSettingWindow()
+    {
+        string path = "SettingWindow";
+        var window = Resources.Load<GameObject>(path);
+        var canvas = GameObject.FindWithTag("UI").GetComponent<Canvas>();
+
+        Object.Instantiate(window, canvas.transform);
+    }
+
 
     public void Update()
     {
