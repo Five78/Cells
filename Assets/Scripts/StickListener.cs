@@ -5,13 +5,19 @@ public class StickListener : MonoBehaviour
 {
     private Image _image;
     private GameController _controller;
+    private GameControllerAI _controllerAI;
+    private StickSound _sound;
 
-    public bool Standing { get; private set; } = false;
+    public bool Standing { get; set; } = false;
 
     private void Start()
     {
         _image = GetComponent<Image>();
-        _controller = FindObjectOfType<GameController>();
+        _sound = GetComponent<StickSound>();
+        _controller = FindObjectOfType<GameController>();        
+
+        if (_controller == null)
+            _controllerAI = FindObjectOfType<GameControllerAI>();
     }
     
     public void OnClick()
@@ -19,13 +25,21 @@ public class StickListener : MonoBehaviour
         var color = _image.color;
         color.a = 1f;
 
-        _image.color = _controller.WhoseMoveNow();
+        if (_controller != null)
+            _image.color = _controller.WhoseMoveNow();
+        else
+            _image.color = _controllerAI.WhoseMoveNow();
         
         var button = GetComponent<Button>();
         button.interactable = false;
         
         Standing = true;
-        _controller.MoveIsMade();
+        _sound.OnPointerClick();
+
+        if (_controller != null)
+            _controller.MoveIsMade();
+        else
+            _controllerAI.MoveIsMade();
     }
 
 }

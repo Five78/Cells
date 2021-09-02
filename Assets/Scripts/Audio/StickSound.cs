@@ -1,17 +1,21 @@
 ﻿using UnityEngine;
-using UnityEngine.EventSystems;
 
-public class ButtonSound : MonoBehaviour, IPointerClickHandler
+public class StickSound : MonoBehaviour
 {
     [SerializeField] private AudioClip _clip;
+    private bool _onPlay = false;
 
     private AudioSource _source;
 
-    public void OnPointerClick(PointerEventData eventData)
+    public void OnPointerClick()
     {
+        if (_onPlay) return;
+
         if (_source == null)
             _source = AudioUtils.FindSfxSource();
 
         _source.PlayOneShot(_clip);
+
+        _onPlay = true;
     }
 }

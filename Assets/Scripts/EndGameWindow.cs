@@ -12,14 +12,21 @@ public class EndGameWindow : MonoBehaviour
     private void OnEnable()
     {
         _session = GameSession.Instance;
-        var count = _session.QuantityOfPlayers;
+        int count;
+        if (_session.AIMode)
+            count = _session.QuantityOfAI;
+        else
+            count = _session.QuantityOfPlayers;
+
+        var names = _session.GetName();
+        
         int max = 0;
         int indexMax = 0;
 
         for (int i = 0; i < count; i++)
         {
             _players[i].gameObject.SetActive(true);
-            _players[i].text = $"pl{i + 1} : {_session.PlayersPoints[i]}";
+            _players[i].text = $"{names[i]} : {_session.PlayersPoints[i]}";
             if (_session.PlayersPoints[i] > max)
             {
                 max = _session.PlayersPoints[i];

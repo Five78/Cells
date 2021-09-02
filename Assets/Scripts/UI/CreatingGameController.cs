@@ -9,6 +9,8 @@ using Object = UnityEngine.Object;
 public class CreatingGameController : MonoBehaviour
 {
     [SerializeField] private Slider _countPlayer;
+    [SerializeField] private Slider _countAI;
+    [SerializeField] private Slider _AILevel;
     [SerializeField] private GameObject[] _playerList;
 
     private Animator _animator;
@@ -33,14 +35,18 @@ public class CreatingGameController : MonoBehaviour
         switch (_mode)
         {
             case 0:
+                _session.QuantityOfAI = (int)_countAI.value+1;
+                _session.AILevel = _AILevel.value;
+                _session.AIMode = true;
+                SceneManager.LoadScene("Game5AI");
                 break;
             case 1:
                 break;
             case 2:
                 if ((int)_countPlayer.value > 1)
                 {
-                    _session.SetQuantityOfPlayers((int)_countPlayer.value);
-                    SceneManager.LoadScene("Game");
+                    _session.QuantityOfPlayers = (int)_countPlayer.value;
+                    SceneManager.LoadScene("Game5");
                 }
                 break;
         }

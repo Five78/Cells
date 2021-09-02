@@ -12,6 +12,12 @@ public class GameSession : MonoBehaviour
     [SerializeField] private Color _player2;
     [SerializeField] private Color _player3;
     [SerializeField] private Color _player4;
+    [Space]
+    [SerializeField] private string _nameUser = "User";
+    [SerializeField] private string _nameAI1 = "Алиса";
+    [SerializeField] private string _nameAI2 = "Боб";
+    [SerializeField] private string _nameAI3 = "Ева";
+
     public static GameSession Instance { get; private set; }
     public float Timer => _timer;
 
@@ -22,7 +28,11 @@ public class GameSession : MonoBehaviour
 
     public int[] PlayersPoints { get; private set; } = new int[4];
 
-    public int QuantityOfPlayers { get; private set; } = 2;
+    public int QuantityOfPlayers { get; set; } = 2;
+    public int QuantityOfAI { get; set; } = 4;
+    public float AILevel { get; set; } = 0.4f;
+
+    public bool AIMode { get; set; } = false;
 
     private void Awake()
     {
@@ -37,10 +47,11 @@ public class GameSession : MonoBehaviour
         PlayersPoints[index] += 1;
     }
 
-    public void SetQuantityOfPlayers(int count)
+    public string[] GetName()
     {
-        QuantityOfPlayers = count;
+        return new string[4] { _nameUser , _nameAI1 , _nameAI2, _nameAI3 };        
     }
+
 
     public void ClearPoints()
     {
