@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameSession : MonoBehaviour
 {
-    [SerializeField] private float _timer;
+    [SerializeField] private float _timer = 30f;
 
     [SerializeField] private Color _player1;
     [SerializeField] private Color _player2;
@@ -30,7 +30,7 @@ public class GameSession : MonoBehaviour
 
     public int QuantityOfPlayers { get; set; } = 2;
     public int QuantityOfAI { get; set; } = 4;
-    public float AILevel { get; set; } = 0.4f;
+    public float AILevel { get; set; } = 1f;
 
     public bool AIMode { get; set; } = false;
 

@@ -18,16 +18,17 @@ public class GameController : MonoBehaviour
     [SerializeField] private StickListener[] _horizontalSticks;
 
     private GameSession _session;
-    private int _count;
+    private int _playersNumber;
     private int _size;
     private bool _playerMovesAgain;
     private float _time;
     private int _countPoint;
+    private List<int> _banList = new List<int>();
 
     private void Start()
     {
         _session = GameSession.Instance;
-        _count = 1;
+        _playersNumber = 1;
 
         if (_session == null)
         {
@@ -54,7 +55,7 @@ public class GameController : MonoBehaviour
 
     public Color WhoseMoveNow()
     {
-        switch (_count)
+        switch (_playersNumber)
         {
             case 1:
                 return _session.Player1;
@@ -72,18 +73,19 @@ public class GameController : MonoBehaviour
     public void MoveIsMade()
     {
         _playerMovesAgain = false;
-        CheckingTheCell();
         
+        StopAllCoroutines();
+        StartCoroutine(StartTimer()); //сбрасываем таймер при ходе. можно изменить через _temi = _delay
+
+        CheckingTheCell();
+
         if (!_playerMovesAgain)
-        {
-            StopAllCoroutines();
-            StartCoroutine(StartTimer());
-            
+        {            
             _playerMovesAgain = false;
             
-            _playerSelected[_count - 1].SetActive(false);
+            _playerSelected[_playersNumber - 1].SetActive(false);
             ChangeMove();
-            _playerSelected[_count - 1].SetActive(true);
+            _playerSelected[_playersNumber - 1].SetActive(true);
         }  
     }
 
@@ -98,16 +100,25 @@ public class GameController : MonoBehaviour
             _timer.text = $"{_delay}";
             _delay--;
             yield return new WaitForSeconds(1f);
-        }        
-        MoveIsMade();
+        }
+        _banList.Add(_playersNumber);
+        if (_banList.Count == _session.QuantityOfPlayers - 1)
+        {
+            EndGameWhitBan();
+            StopAllCoroutines();
+        }
+        else            
+            MoveIsMade();
     }
 
     public void ChangeMove()
     {
-        if (_count < _session.QuantityOfPlayers)
-            _count++;
+        if (_playersNumber < _session.QuantityOfPlayers)
+            _playersNumber++;
         else
-            _count = 1;
+            _playersNumber = 1;
+        if (_banList.Contains(_playersNumber))
+            ChangeMove();
     }
 
     public void CheckingTheCell()
@@ -129,7 +140,7 @@ public class GameController : MonoBehaviour
         {
             _playerMovesAgain = true;
             _cells[i].ChangeColor(WhoseMoveNow());
-            _session.SetPoint(_count - 1);
+            _session.SetPoint(_playersNumber - 1);
 
             _countPoint--;
             if (_countPoint == 0)
@@ -167,6 +178,23 @@ public class GameController : MonoBehaviour
     private void EndGame()
     {
         StopAllCoroutines();
+        _endGame.SetActive(true);
+    }
+
+    private void EndGameWhitBan()
+    {
+        StopAllCoroutines();
+        if (_playersNumber < _session.QuantityOfPlayers)
+            _playersNumber++;
+        else
+            _playersNumber = 1;
+        
+        foreach(var item in _cells)
+        {
+            item.ChangeColor(WhoseMoveNow());
+            _session.SetPoint(_playersNumber - 1);
+        }
+
         _endGame.SetActive(true);
     }
 }

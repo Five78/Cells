@@ -16,6 +16,7 @@ public class CreatingGameController : MonoBehaviour
     private Animator _animator;
     private GameSession _session;
     private int _mode = 0;
+    private int _sizeBoard = 0;
     private int _sliderValue;
 
     private void Start()
@@ -30,6 +31,11 @@ public class CreatingGameController : MonoBehaviour
         _mode = mode;
     }
 
+    public void ActiveSizeBoard(int size)
+    {
+        _sizeBoard = size;
+    }
+
     public void StartGame()
     {
         switch (_mode)
@@ -38,7 +44,20 @@ public class CreatingGameController : MonoBehaviour
                 _session.QuantityOfAI = (int)_countAI.value+1;
                 _session.AILevel = _AILevel.value;
                 _session.AIMode = true;
-                SceneManager.LoadScene("Game5AI");
+                switch (_sizeBoard)
+                {
+                    case 0:
+                        SceneManager.LoadScene("Game3AI");
+                        break;
+                    case 1:
+                        SceneManager.LoadScene("Game5AI");
+                        break;
+                    case 2:
+                        break;
+                    default:
+                        SceneManager.LoadScene("Game5AI");
+                        break;
+                }                
                 break;
             case 1:
                 break;
@@ -46,7 +65,21 @@ public class CreatingGameController : MonoBehaviour
                 if ((int)_countPlayer.value > 1)
                 {
                     _session.QuantityOfPlayers = (int)_countPlayer.value;
-                    SceneManager.LoadScene("Game5");
+                    switch (_sizeBoard)
+                    {
+                        case 0:
+                            SceneManager.LoadScene("Game3");
+                            break;
+                        case 1:
+                            SceneManager.LoadScene("Game5");
+                            break;
+                        case 2:
+                            break;
+                        default:
+                            SceneManager.LoadScene("Game5");
+                            break;
+                    }
+                    
                 }
                 break;
         }
