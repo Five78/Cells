@@ -208,6 +208,7 @@ GameObject:
   - component: {fileID: 5141959100514018369}
   - component: {fileID: 5141959100514018371}
   - component: {fileID: 5141959100514018368}
+  - component: {fileID: 996958918053177941}
   m_Layer: 5
   m_Name: Lable
   m_TagString: Untagged
@@ -275,6 +276,20 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "\u041C\u0430\u0433\u0430\u0437\u0438\u043D"
+--- !u!114 &996958918053177941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5141959100514018382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e20bbb32659bdb548bce2575ceab9463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _key: lable_shop
+  _capitalize: 0
 --- !u!1 &5141959101245022282
 GameObject:
   m_ObjectHideFlags: 0
@@ -490,8 +505,9 @@ GameObject:
   - component: {fileID: 1838434074849298318}
   - component: {fileID: 56743052318379545}
   - component: {fileID: 7393080481083864428}
+  - component: {fileID: 6021087342534778330}
   m_Layer: 5
-  m_Name: Lable (1)
+  m_Name: ComingSoon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -557,3 +573,17 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Coming soon...
+--- !u!114 &6021087342534778330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8755539085661545549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e20bbb32659bdb548bce2575ceab9463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _key: lable_temporary
+  _capitalize: 0

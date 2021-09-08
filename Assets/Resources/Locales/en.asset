@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3192b2d67afe9245b1bd51d0de3ffac, type: 3}
+  m_Name: en
+  m_EditorClassIdentifier: 
+  _url: https://docs.google.com/spreadsheets/d/e/2PACX-1vQez1ofutDflMK0ZZMAfyifm_uyghD3yhKkIGQEQhvuX5Po3hRm1qUxilU1ztYTsAMISZ2CyD29bxjY/pub?gid=0&single=true&output=tsv
+  _localeItmes:
+  - Key: button_customization
+    Value: "Customization\r"
+  - Key: button_exit
+    Value: "Exit\r"
+  - Key: button_play
+    Value: "Play\r"
+  - Key: button_rules
+    Value: "Rules\r"
+  - Key: button_settings
+    Value: "Settings\r"
+  - Key: button_shop
+    Value: "Shop\r"
+  - Key: button_start
+    Value: "Play\r"
+  - Key: lable_complexity_ai
+    Value: "AI Complexity\r"
+  - Key: lable_count_ai
+    Value: "Number of bots\r"
+  - Key: lable_count_players
+    Value: "Number of players\r"
+  - Key: lable_language
+    Value: "Language\r"
+  - Key: lable_music
+    Value: "Music\r"
+  - Key: lable_pause
+    Value: "Pause\r"
+  - Key: lable_rules_1
+    Value: "Rules:\r"
+  - Key: lable_rules_2
+    Value: "Recommended number of players: from 2 to 4. Field sizes: 5x5, 10x10,
+      15x15\r"
+  - Key: lable_rules_3
+    Value: "Players take turns adding one vertical or horizontal line, the length
+      of which is equal to one cell. The player who closes the contour of the cell
+      with a \"stick\" of his own color takes it, receiving 1 point and the right
+      to an additional move. The game ends when the entire field is filled in. The
+      player with the highest number of points wins by the end of the game.\r"
+  - Key: lable_search
+    Value: "Search\r"
+  - Key: lable_settings
+    Value: "Settings\r"
+  - Key: lable_sfx
+    Value: "Sound\r"
+  - Key: lable_shop
+    Value: "Shop\r"
+  - Key: lable_temporary
+    Value: Coming soon ...

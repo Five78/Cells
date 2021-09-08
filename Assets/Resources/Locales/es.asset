@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3192b2d67afe9245b1bd51d0de3ffac, type: 3}
+  m_Name: es
+  m_EditorClassIdentifier: 
+  _url: https://docs.google.com/spreadsheets/d/e/2PACX-1vQez1ofutDflMK0ZZMAfyifm_uyghD3yhKkIGQEQhvuX5Po3hRm1qUxilU1ztYTsAMISZ2CyD29bxjY/pub?gid=882358866&single=true&output=tsv
+  _localeItmes:
+  - Key: button_customization
+    Value: "Personalizaci\xF3n\r"
+  - Key: button_exit
+    Value: "Salida\r"
+  - Key: button_play
+    Value: "Jugar\r"
+  - Key: button_rules
+    Value: "Normas\r"
+  - Key: button_settings
+    Value: "Ajustes\r"
+  - Key: button_shop
+    Value: "Tienda\r"
+  - Key: button_start
+    Value: "Jugar\r"
+  - Key: lable_complexity_ai
+    Value: "Complejidad de la IA\r"
+  - Key: lable_count_ai
+    Value: "Numero de bots\r"
+  - Key: lable_count_players
+    Value: "Numero de jugadores\r"
+  - Key: lable_language
+    Value: "Idioma\r"
+  - Key: lable_music
+    Value: "M\xFAsica\r"
+  - Key: lable_pause
+    Value: "Pausa\r"
+  - Key: lable_rules_1
+    Value: "Normas:\r"
+  - Key: lable_rules_2
+    Value: "N\xFAmero recomendado de jugadores: de 2 a 4. Tama\xF1os de campo: 5x5,
+      10x10, 15x15\r"
+  - Key: lable_rules_3
+    Value: "Los jugadores se turnan para agregar una l\xEDnea vertical u horizontal,
+      cuya longitud es igual a una celda. El jugador que cierra el contorno de la
+      celda con un \"palo\" de su propio color lo toma, recibiendo 1 punto y derecho
+      a una jugada adicional. El juego termina cuando se llena todo el campo. El
+      jugador con el mayor n\xFAmero de puntos gana al final del juego.\r"
+  - Key: lable_search
+    Value: "Buscar\r"
+  - Key: lable_settings
+    Value: "Ajustes\r"
+  - Key: lable_sfx
+    Value: "Sonido\r"
+  - Key: lable_shop
+    Value: "Tienda\r"
+  - Key: lable_temporary
+    Value: "Pr\xF3ximamente, en breve, pronto ..."

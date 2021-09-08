@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3192b2d67afe9245b1bd51d0de3ffac, type: 3}
+  m_Name: de
+  m_EditorClassIdentifier: 
+  _url: https://docs.google.com/spreadsheets/d/e/2PACX-1vQez1ofutDflMK0ZZMAfyifm_uyghD3yhKkIGQEQhvuX5Po3hRm1qUxilU1ztYTsAMISZ2CyD29bxjY/pub?gid=1428363312&single=true&output=tsv
+  _localeItmes:
+  - Key: button_customization
+    Value: "Anpassung\r"
+  - Key: button_exit
+    Value: "Ausgang\r"
+  - Key: button_play
+    Value: "Spiel\r"
+  - Key: button_rules
+    Value: "Regeln\r"
+  - Key: button_settings
+    Value: "Einstellung\r"
+  - Key: button_shop
+    Value: "Einkaufen\r"
+  - Key: button_start
+    Value: "Spiel\r"
+  - Key: lable_complexity_ai
+    Value: "KI-Komplexit\xE4t\r"
+  - Key: lable_count_ai
+    Value: "Anzahl der Bots\r"
+  - Key: lable_count_players
+    Value: "Anzahl der Spieler\r"
+  - Key: lable_language
+    Value: "Sprache\r"
+  - Key: lable_music
+    Value: "Musik\r"
+  - Key: lable_pause
+    Value: "Pause\r"
+  - Key: lable_rules_1
+    Value: "Regeln:\r"
+  - Key: lable_rules_2
+    Value: "Empfohlene Spieleranzahl: 2 bis 4. Spielfeldgr\xF6\xDFen: 5x5, 10x10,
+      15x15\r"
+  - Key: lable_rules_3
+    Value: "Die Spieler f\xFCgen abwechselnd eine vertikale oder horizontale Linie
+      hinzu, deren L\xE4nge einer Zelle entspricht. Der Spieler, der die Kontur der
+      Zelle mit einem \"Stock\" seiner eigenen Farbe schlie\xDFt, nimmt ihn und erh\xE4lt
+      1 Punkt und das Recht auf einen zus\xE4tzlichen Zug. Das Spiel endet, wenn
+      das gesamte Feld ausgef\xFCllt ist. Der Spieler mit der h\xF6chsten Punktzahl
+      gewinnt am Ende des Spiels.\r"
+  - Key: lable_search
+    Value: "Suche\r"
+  - Key: lable_settings
+    Value: "Einstellungen\r"
+  - Key: lable_sfx
+    Value: "Klang\r"
+  - Key: lable_shop
+    Value: "Einkaufen\r"
+  - Key: lable_temporary
+    Value: Kommt bald ...

@@ -86,6 +86,7 @@ GameObject:
   - component: {fileID: 2201389875140755030}
   - component: {fileID: 2201389875140755028}
   - component: {fileID: 2201389875140755029}
+  - component: {fileID: 2533703203630550962}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -153,6 +154,20 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "\u041F\u0440\u0430\u0432\u0438\u043B\u0430"
+--- !u!114 &2533703203630550962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2201389875140755031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e20bbb32659bdb548bce2575ceab9463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _key: button_rules
+  _capitalize: 0
 --- !u!1 &2201389875382305508
 GameObject:
   m_ObjectHideFlags: 0
@@ -311,6 +326,7 @@ GameObject:
   - component: {fileID: 2201389875918292323}
   - component: {fileID: 2201389875918292321}
   - component: {fileID: 2201389875918292322}
+  - component: {fileID: 1282842228425749934}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -378,6 +394,20 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438"
+--- !u!114 &1282842228425749934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2201389875918292380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e20bbb32659bdb548bce2575ceab9463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _key: button_settings
+  _capitalize: 0
 --- !u!1 &2201389875994634097
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,6 +419,7 @@ GameObject:
   - component: {fileID: 2201389875994634096}
   - component: {fileID: 2201389875994634102}
   - component: {fileID: 2201389875994634103}
+  - component: {fileID: 5155072260401750322}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -456,6 +487,20 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "\u041C\u0430\u0433\u0430\u0437\u0438\u043D"
+--- !u!114 &5155072260401750322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2201389875994634097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e20bbb32659bdb548bce2575ceab9463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _key: button_shop
+  _capitalize: 0
 --- !u!1 &2201389876004197155
 GameObject:
   m_ObjectHideFlags: 0
@@ -467,6 +512,7 @@ GameObject:
   - component: {fileID: 2201389876004197154}
   - component: {fileID: 2201389876004197152}
   - component: {fileID: 2201389876004197153}
+  - component: {fileID: 3371407787752201697}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -534,6 +580,20 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "\u0418\u0433\u0440\u0430\u0442\u044C"
+--- !u!114 &3371407787752201697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2201389876004197155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e20bbb32659bdb548bce2575ceab9463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _key: button_play
+  _capitalize: 0
 --- !u!1 &2201389876501955518
 GameObject:
   m_ObjectHideFlags: 0
@@ -702,7 +762,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _clip: {fileID: 8300000, guid: 1c73b5cc006bc7b4a9504d1ec0ec6d66, type: 3}
-  _playAgain: 1
 --- !u!1 &2201389876513849438
 GameObject:
   m_ObjectHideFlags: 0
@@ -871,7 +930,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _clip: {fileID: 8300000, guid: 1c73b5cc006bc7b4a9504d1ec0ec6d66, type: 3}
-  _playAgain: 1
 --- !u!1 &2201389876772242853
 GameObject:
   m_ObjectHideFlags: 0
@@ -1039,7 +1097,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _clip: {fileID: 8300000, guid: 1c73b5cc006bc7b4a9504d1ec0ec6d66, type: 3}
-  _playAgain: 1
 --- !u!1 &2201389876922511579
 GameObject:
   m_ObjectHideFlags: 0
@@ -1208,7 +1265,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _clip: {fileID: 8300000, guid: 1c73b5cc006bc7b4a9504d1ec0ec6d66, type: 3}
-  _playAgain: 1
 --- !u!1 &3013521640258976429
 GameObject:
   m_ObjectHideFlags: 0

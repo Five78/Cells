@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3192b2d67afe9245b1bd51d0de3ffac, type: 3}
+  m_Name: zh
+  m_EditorClassIdentifier: 
+  _url: https://docs.google.com/spreadsheets/d/e/2PACX-1vQez1ofutDflMK0ZZMAfyifm_uyghD3yhKkIGQEQhvuX5Po3hRm1qUxilU1ztYTsAMISZ2CyD29bxjY/pub?gid=2131872864&single=true&output=tsv
+  _localeItmes:
+  - Key: button_customization
+    Value: "\u5B9A\u5236\r"
+  - Key: button_exit
+    Value: "\u51FA\u53E3\r"
+  - Key: button_play
+    Value: "\u73A9\r"
+  - Key: button_rules
+    Value: "\u89C4\u5219\r"
+  - Key: button_settings
+    Value: "\u8BBE\u7F6E\r"
+  - Key: button_shop
+    Value: "\u5E97\u94FA\r"
+  - Key: button_start
+    Value: "\u73A9\r"
+  - Key: lable_complexity_ai
+    Value: "\u4EBA\u5DE5\u667A\u80FD\u590D\u6742\u6027\r"
+  - Key: lable_count_ai
+    Value: "\u673A\u5668\u4EBA\u6570\u91CF\r"
+  - Key: lable_count_players
+    Value: "\u73A9\u5BB6\u4EBA\u6570\r"
+  - Key: lable_language
+    Value: "\u8BED\r"
+  - Key: lable_music
+    Value: "\u97F3\u4E50\r"
+  - Key: lable_pause
+    Value: "\u6682\u505C\r"
+  - Key: lable_rules_1
+    Value: "\u89C4\u5219\uFF1A\r"
+  - Key: lable_rules_2
+    Value: "\u63A8\u8350\u73A9\u5BB6\u4EBA\u6570\uFF1A2 \u5230 4 \u4EBA\u3002\u573A\u5730\u5927\u5C0F\uFF1A5x5\u300110x10\u300115x15\r"
+  - Key: lable_rules_3
+    Value: "\u73A9\u5BB6\u8F6E\u6D41\u6DFB\u52A0\u4E00\u6761\u5782\u76F4\u6216\u6C34\u5E73\u7EBF\uFF0C\u5176\u957F\u5EA6\u7B49\u4E8E\u4E00\u4E2A\u5355\u5143\u683C\u3002
+      \u7528\u81EA\u5DF1\u989C\u8272\u7684\u201C\u68CD\u5B50\u201D\u5173\u95ED\u5355\u5143\u683C\u8F6E\u5ED3\u7684\u73A9\u5BB6\u62FF\u8D70\u5B83\uFF0C\u83B7\u5F97
+      1 \u5206\u548C\u989D\u5916\u79FB\u52A8\u7684\u6743\u5229\u3002 \u5F53\u6574\u4E2A\u533A\u57DF\u90FD\u586B\u6EE1\u65F6\uFF0C\u6E38\u620F\u7ED3\u675F\u3002\u5728\u6E38\u620F\u7ED3\u675F\u65F6\uFF0C\u5F97\u5206\u6700\u9AD8\u7684\u73A9\u5BB6\u83B7\u80DC\u3002\r"
+  - Key: lable_search
+    Value: "\u641C\u7D22\r"
+  - Key: lable_settings
+    Value: "\u8BBE\u7F6E\r"
+  - Key: lable_sfx
+    Value: "\u58F0\u97F3\r"
+  - Key: lable_shop
+    Value: "\u5E97\u94FA\r"
+  - Key: lable_temporary
+    Value: "\u5373\u5C06\u63A8\u51FA ..."

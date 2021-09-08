@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3192b2d67afe9245b1bd51d0de3ffac, type: 3}
+  m_Name: fr
+  m_EditorClassIdentifier: 
+  _url: https://docs.google.com/spreadsheets/d/e/2PACX-1vQez1ofutDflMK0ZZMAfyifm_uyghD3yhKkIGQEQhvuX5Po3hRm1qUxilU1ztYTsAMISZ2CyD29bxjY/pub?gid=205073420&single=true&output=tsv
+  _localeItmes:
+  - Key: button_customization
+    Value: "Personnalisation\r"
+  - Key: button_exit
+    Value: "Sortir\r"
+  - Key: button_play
+    Value: "Jouer\r"
+  - Key: button_rules
+    Value: "R\xE8gles:\r"
+  - Key: button_settings
+    Value: "Param\xE8tres\r"
+  - Key: button_shop
+    Value: "Boutique\r"
+  - Key: button_start
+    Value: "Jouer\r"
+  - Key: lable_complexity_ai
+    Value: "Complexit\xE9 de l'IA\r"
+  - Key: lable_count_ai
+    Value: "Nombre de robots\r"
+  - Key: lable_count_players
+    Value: "Nombre de joueurs\r"
+  - Key: lable_language
+    Value: "Langue\r"
+  - Key: lable_music
+    Value: "Musique\r"
+  - Key: lable_pause
+    Value: "Pause\r"
+  - Key: lable_rules_1
+    Value: "R\xE8gles:\r"
+  - Key: lable_rules_2
+    Value: "Nombre de joueurs recommand\xE9 : de 2 \xE0 4. Tailles des terrains :
+      5x5, 10x10, 15x15\r"
+  - Key: lable_rules_3
+    Value: "Les joueurs ajoutent \xE0 tour de r\xF4le une ligne verticale ou horizontale,
+      dont la longueur est \xE9gale \xE0 une cellule. Le joueur qui ferme le contour
+      de la cellule avec un \"b\xE2ton\" de sa couleur le prend, recevant 1 point
+      et le droit \xE0 un coup suppl\xE9mentaire. Le jeu se termine lorsque tout
+      le champ est rempli. Le joueur avec le plus grand nombre de points gagne \xE0
+      la fin de la partie.\r"
+  - Key: lable_search
+    Value: "Chercher\r"
+  - Key: lable_settings
+    Value: "Param\xE8tres\r"
+  - Key: lable_sfx
+    Value: "Sonner\r"
+  - Key: lable_shop
+    Value: "Boutique\r"
+  - Key: lable_temporary
+    Value: "Bient\xF4t disponible ..."
