@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Game3AI.unity
     guid: d30ff5b66ed393041b3fedd3506dec58
   - enabled: 1
+    path: Assets/Scenes/Game3MP.unity
+    guid: f9d81e64921acfe4e855aabc77f8b59f
+  - enabled: 1
     path: Assets/Scenes/Game5.unity
     guid: 716862ad0fe993b4983686f625764818
   - enabled: 1

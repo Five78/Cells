@@ -55,6 +55,9 @@ sysinfo.txt
 *.apk
 *.unitypackage
 
+# Firebase
+FirebaseCppApp-8_3_0.so
+
 # Crashlytics generated file
 crashlytics-build.properties
 

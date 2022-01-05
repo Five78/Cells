@@ -19,6 +19,9 @@ public class GameSession : MonoBehaviour
     [SerializeField] private string _nameAI3 = "Ева";
 
     public static GameSession Instance { get; private set; }
+
+    public LobbyDB UserLobby { get; private set; }
+
     public float Timer => _timer;
 
     public Color Player1 => _player1;
@@ -31,7 +34,6 @@ public class GameSession : MonoBehaviour
     public int QuantityOfPlayers { get; set; } = 2;
     public int QuantityOfAI { get; set; } = 4;
     public float AILevel { get; set; } = 1f;
-
     public bool AIMode { get; set; } = false;
 
     private void Awake()
@@ -40,6 +42,16 @@ public class GameSession : MonoBehaviour
         Instance = this;
 
         DontDestroyOnLoad(this);
+    }
+
+    public void SetLobby(LobbyDB lobby)
+    {
+        UserLobby = lobby;
+
+        QuantityOfPlayers = lobby.Players.Length;
+        _nameAI1 = QuantityOfPlayers == 2 ? lobby.Players[1] : _nameAI1;
+        _nameAI2 = QuantityOfPlayers == 3 ? lobby.Players[2] : _nameAI2;
+        _nameAI3 = QuantityOfPlayers == 4 ? lobby.Players[3] : _nameAI3;
     }
 
     public void SetPoint(int index)
@@ -51,7 +63,6 @@ public class GameSession : MonoBehaviour
     {
         return new string[4] { _nameUser , _nameAI1 , _nameAI2, _nameAI3 };        
     }
-
 
     public void ClearPoints()
     {
@@ -65,6 +76,7 @@ public class GameSession : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
     private void OnDestroy()
     {
         if (Instance == this)

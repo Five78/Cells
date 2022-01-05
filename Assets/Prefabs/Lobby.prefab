@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1985863254339021350}
   - component: {fileID: 1985863254339021351}
   - component: {fileID: 4626166685527289486}
+  - component: {fileID: 6362354013348687989}
   m_Layer: 5
   m_Name: Lobby
   m_TagString: Untagged
@@ -99,6 +100,19 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!114 &6362354013348687989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1985863254339021353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d985c5b4f5949754e8d4ab174e3eac3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _lobbyName: {fileID: 2085641328549009124}
 --- !u!1 &1985863254633841346
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,7 +368,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.2878248, g: 0.7924528, b: 0.35163337, a: 1}
-  m_RaycastTarget: 0
+  m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -412,7 +426,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1985863255283070258}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6362354013348687989}
+        m_MethodName: Join
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7053889848713099533
 GameObject:
   m_ObjectHideFlags: 0

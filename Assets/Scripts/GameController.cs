@@ -80,13 +80,13 @@ public class GameController : MonoBehaviour
         CheckingTheCell();
 
         if (!_playerMovesAgain)
-        {            
+        {
             _playerMovesAgain = false;
-            
+
             _playerSelected[_playersNumber - 1].SetActive(false);
             ChangeMove();
             _playerSelected[_playersNumber - 1].SetActive(true);
-        }  
+        }
     }
 
 
@@ -123,7 +123,6 @@ public class GameController : MonoBehaviour
 
     public void CheckingTheCell()
     {
-
         for (int i = 0; i < _cells.Length; i++)
         {
             int a = i + _size;

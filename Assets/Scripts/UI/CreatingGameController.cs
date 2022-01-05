@@ -8,6 +8,7 @@ using Object = UnityEngine.Object;
 
 public class CreatingGameController : MonoBehaviour
 {
+    [SerializeField] private Text _lobbyName;
     [SerializeField] private Slider _countPlayer;
     [SerializeField] private Slider _countAI;
     [SerializeField] private Slider _AILevel;
@@ -104,6 +105,13 @@ public class CreatingGameController : MonoBehaviour
         Object.Instantiate(window, canvas.transform);
     }
 
+    public void OnCreateLobby()
+    {
+        string[] user = new string[] { _session.GetName()[0] };
+        LobbyDB data = new LobbyDB(_lobbyName.text, user);
+
+        LobbyWaiting.Instantiate(data);
+    }
 
     public void Update()
     {
