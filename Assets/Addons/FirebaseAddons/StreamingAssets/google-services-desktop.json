@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "622225224524",
-    "firebase_url": "https://sticks-7f89a-default-rtdb.europe-west1.firebasedatabase.app",
-    "project_id": "sticks-7f89a",
-    "storage_bucket": "sticks-7f89a.appspot.com"
+    "project_number": "502446358621",
+    "firebase_url": "https://sticks-cells-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "sticks-cells",
+    "storage_bucket": "sticks-cells.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:622225224524:android:c097b46823eb8feb8715e9",
+        "mobilesdk_app_id": "1:502446358621:android:d5b9694d78ad1eaefd0db4",
         "android_client_info": {
           "package_name": "com.JacklopGS.Sticks"
         }
       },
       "oauth_client": [
         {
-          "client_id": "622225224524-u417179b6htit6mnmankknceomemhqja.apps.googleusercontent.com",
+          "client_id": "502446358621-lm9hf5bgl5kceji3dt2jh12sa11euohv.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCtt8YUHW9IRYbFHwP6dVE_d_QcFxovjmw"
+          "current_key": "AIzaSyCOX76woK_QkwWLwsCaOSXHwqybM7sNPGU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "622225224524-u417179b6htit6mnmankknceomemhqja.apps.googleusercontent.com",
+              "client_id": "502446358621-lm9hf5bgl5kceji3dt2jh12sa11euohv.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

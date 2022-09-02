@@ -1,4 +1,5 @@
-﻿using Firebase.Database;
+﻿using Firebase;
+using Firebase.Database;
 using UnityEngine;
 
 public class LobbyFinder : MonoBehaviour

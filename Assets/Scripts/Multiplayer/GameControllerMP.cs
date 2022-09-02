@@ -16,8 +16,8 @@ public class GameControllerMP : MonoBehaviour
     [SerializeField] private GameObject _endGame;
     [Space]
     [SerializeField] private CellComponent[] _cells;
-    [SerializeField] private StickListener[] _verticalSticks;
-    [SerializeField] private StickListener[] _horizontalSticks;
+    [SerializeField] private StickListenerMP[] _verticalSticks;
+    [SerializeField] private StickListenerMP[] _horizontalSticks;
 
     private GameSession _session;
     private int _playersNumber;
@@ -68,15 +68,13 @@ public class GameControllerMP : MonoBehaviour
         string coordinatesJson = args.Snapshot.GetRawJsonValue();
         StickCoordinates coordinates = JsonUtility.FromJson<StickCoordinates>(coordinatesJson);
 
-        StickListener stick;
+        StickListenerMP stick;
         if (coordinates.isVertical)
             stick = _verticalSticks[coordinates.position];
         else
             stick = _horizontalSticks[coordinates.position];
 
-        if (stick.Standing)
-            return;
-        else
+        if (!stick.Standing)
             stick.OnClick();
 
         _block.SetActive(false);
@@ -143,6 +141,8 @@ public class GameControllerMP : MonoBehaviour
 
     public void ChangeMove()
     {
+        _block.SetActive(!_block.activeSelf);
+
         if (_playersNumber < _session.QuantityOfPlayers)
             _playersNumber++;
         else
@@ -161,6 +161,8 @@ public class GameControllerMP : MonoBehaviour
             if (_horizontalSticks[i].Standing && _horizontalSticks[a].Standing && _verticalSticks[b].Standing && _verticalSticks[c].Standing)
                 ChangingTheCell(i);
         }
+
+        //_block.SetActive();
     }
 
     private void ChangingTheCell(int i)
@@ -194,6 +196,13 @@ public class GameControllerMP : MonoBehaviour
         _session.ClearPoints();
         _session.DestroySession();
         SceneManager.LoadScene("MainMenu");
+
+        DeleteLobbyData();
+    }
+
+    public void DeleteLobbyData()
+    {
+        GameSession.Instance.UserLobby.RemoveLobbyFromDB();
     }
 
     public void OnSettingWindow()

@@ -59,6 +59,10 @@ public class LobbyWaiting : MonoBehaviour
             case 0:
                 SceneManager.LoadScene("Game3MP");
                 break;
+
+            case 1:
+                SceneManager.LoadScene("Game5MP");
+                break;
         }
     }
 
