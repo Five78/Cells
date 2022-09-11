@@ -41,7 +41,7 @@ public class LobbyWaiting : MonoBehaviour
         if (!_lobbyDB.OwnedByUser)
         {
             FirebaseDatabase.DefaultInstance.GetReference("onGoingLobbies")
-                .ChildAdded += (object sender, ChildChangedEventArgs args) => 
+                .ChildAdded += (object sender, ChildChangedEventArgs args) =>
                 {
                     if (args.Snapshot.Key == _lobbyDB.Id)
                         StartLobby();
@@ -51,7 +51,7 @@ public class LobbyWaiting : MonoBehaviour
 
     public void StartLobby()
     {
-        _lobbyDB.StartLobby();
+        _lobbyDB.MoveLobbyToOnGoingBranch();
         GameSession.Instance.SetLobby(_lobbyDB);
 
         switch (_sizeBoard)
@@ -112,7 +112,7 @@ public class LobbyWaiting : MonoBehaviour
     public void OnCloseAnimatorComplete()
     {
         if (_lobbyDB.OwnedByUser)
-            _lobbyDB.RemoveLobbyFromDB();
+            _lobbyDB.RemoveLobbyFromBranch(LobbyDB.LobbyBranch.Awaiting);
         else
             _lobbyDB.Leave();
             

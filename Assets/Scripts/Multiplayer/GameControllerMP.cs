@@ -27,8 +27,6 @@ public class GameControllerMP : MonoBehaviour
     private int _countPoint;
     private List<int> _banList = new List<int>();
 
-    private DatabaseReference _lastMoveCoordinates;
-
     private void Start()
     {
         _session = GameSession.Instance;
@@ -49,24 +47,32 @@ public class GameControllerMP : MonoBehaviour
         _countPoint = _cells.Length;
 
         _playerSelected[0].SetActive(true);
-        _block.SetActive(!GameSession.Instance.UserLobby.OwnedByUser);
         _timer.text = "00";
         _time = _session.Timer;
 
         _size = (int)Math.Sqrt(_cells.Length);
 
-        _lastMoveCoordinates = FirebaseDatabase.DefaultInstance
+        DatabaseReference lastMoveCoordinates = FirebaseDatabase.DefaultInstance
             .GetReference("onGoingLobbies/" + _session.UserLobby.Id);
+        lastMoveCoordinates.ChildAdded += ShowSentMove;
+        lastMoveCoordinates.ChildChanged += ShowSentMove;
 
-        _lastMoveCoordinates.ChildChanged += PlaceStick;
+        _block.SetActive(!_session.UserLobby.OwnedByUser);
 
         StartCoroutine(StartTimer());
     }
 
-    private void PlaceStick(object sender, ChildChangedEventArgs args)
+    private void ShowSentMove(object sender, ChildChangedEventArgs args)
     {
         string coordinatesJson = args.Snapshot.GetRawJsonValue();
-        StickCoordinates coordinates = JsonUtility.FromJson<StickCoordinates>(coordinatesJson);
+        StickCoordinates coordinates;
+        
+        try {
+            coordinates = JsonUtility.FromJson<StickCoordinates>(coordinatesJson);
+        } catch (ArgumentException) {
+            Debug.Log("The coordinates of the move have not yet been transmitted");
+            return;
+        }
 
         StickListenerMP stick;
         if (coordinates.isVertical)
@@ -76,8 +82,6 @@ public class GameControllerMP : MonoBehaviour
 
         if (!stick.Standing)
             stick.OnClick();
-
-        _block.SetActive(false);
     }
 
     public Color WhoseMoveNow()
@@ -99,7 +103,6 @@ public class GameControllerMP : MonoBehaviour
 
     public void MoveIsMade()
     {
-        _block.SetActive(true);
         _playerMovesAgain = false;
 
         StopAllCoroutines();
@@ -116,7 +119,6 @@ public class GameControllerMP : MonoBehaviour
             _playerSelected[_playersNumber - 1].SetActive(true);
         }
     }
-
 
     private float _delay;
     private IEnumerator StartTimer()
@@ -161,8 +163,6 @@ public class GameControllerMP : MonoBehaviour
             if (_horizontalSticks[i].Standing && _horizontalSticks[a].Standing && _verticalSticks[b].Standing && _verticalSticks[c].Standing)
                 ChangingTheCell(i);
         }
-
-        //_block.SetActive();
     }
 
     private void ChangingTheCell(int i)
@@ -170,7 +170,6 @@ public class GameControllerMP : MonoBehaviour
         if (!_cells[i].ChangedTheColor)
         {
             _playerMovesAgain = true;
-            _block.SetActive(false);
             _cells[i].ChangeColor(WhoseMoveNow());
             _session.SetPoint(_playersNumber - 1);
 
@@ -197,12 +196,7 @@ public class GameControllerMP : MonoBehaviour
         _session.DestroySession();
         SceneManager.LoadScene("MainMenu");
 
-        DeleteLobbyData();
-    }
-
-    public void DeleteLobbyData()
-    {
-        GameSession.Instance.UserLobby.RemoveLobbyFromDB();
+        GameSession.Instance.UserLobby.RemoveLobbyFromBranch(LobbyDB.LobbyBranch.OnGoing);
     }
 
     public void OnSettingWindow()
@@ -218,6 +212,8 @@ public class GameControllerMP : MonoBehaviour
     {
         StopAllCoroutines();
         _endGame.SetActive(true);
+
+        GameSession.Instance.UserLobby.RemoveLobbyFromBranch(LobbyDB.LobbyBranch.OnGoing);
     }
 
     private void EndGameWhitBan()
@@ -235,5 +231,7 @@ public class GameControllerMP : MonoBehaviour
         }
 
         _endGame.SetActive(true);
+
+        GameSession.Instance.UserLobby.RemoveLobbyFromBranch(LobbyDB.LobbyBranch.OnGoing);
     }
 }

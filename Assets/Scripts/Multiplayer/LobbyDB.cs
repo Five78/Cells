@@ -5,8 +5,11 @@ using UnityEngine;
 
 public class LobbyDB
 {
-    public static DatabaseReference AvailableLobbies => FirebaseDatabase.DefaultInstance.RootReference.Child("lobbies");
-    public static DatabaseReference OnGoingLobbies => FirebaseDatabase.DefaultInstance.RootReference.Child("onGoingLobbies");
+    public static DatabaseReference AvailableLobbies => 
+        FirebaseDatabase.DefaultInstance.RootReference.Child("lobbies");
+
+    public static DatabaseReference OnGoingLobbies => 
+        FirebaseDatabase.DefaultInstance.RootReference.Child("onGoingLobbies");
 
     private readonly Data _lobbyData;
 
@@ -55,11 +58,12 @@ public class LobbyDB
             .SetValueAsync(null);
     }
 
-    public void StartLobby()
+    public void MoveLobbyToOnGoingBranch()
     {
-        OnGoingLobbies.Child(_lobbyData.id).Child("stickCoordinates").SetValueAsync("empty");
-
-        RemoveLobbyFromDB();
+        OnGoingLobbies.Child(_lobbyData.id)
+            .Child("stickCoordinates").SetValueAsync("empty");
+        
+        RemoveLobbyFromBranch(LobbyBranch.Awaiting);
     }
 
     public void IfDoesntExist(Action action)
@@ -75,9 +79,13 @@ public class LobbyDB
             });
     }
 
-    public void RemoveLobbyFromDB()
+    public enum LobbyBranch { Awaiting = 0, OnGoing = 1  }
+    public void RemoveLobbyFromBranch(LobbyBranch branch)
     {
-        AvailableLobbies.Child(_lobbyData.id).SetValueAsync(null);
+        if (branch == LobbyBranch.OnGoing)
+            OnGoingLobbies.Child(_lobbyData.id).SetValueAsync(null);
+        else if (branch == LobbyBranch.Awaiting)
+            AvailableLobbies.Child(_lobbyData.id).SetValueAsync(null);
     }
 
     public void NullifyLocalPlayersData()
