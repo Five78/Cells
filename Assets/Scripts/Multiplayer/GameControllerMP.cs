@@ -52,8 +52,8 @@ public class GameControllerMP : MonoBehaviour
 
         _size = (int)Math.Sqrt(_cells.Length);
 
-        DatabaseReference lastMoveCoordinates = FirebaseDatabase.DefaultInstance
-            .GetReference("onGoingLobbies/" + _session.UserLobby.Id);
+        DatabaseReference lastMoveCoordinates = LobbyDB.OnGoingLobbies
+            .Child(_session.UserLobby.Id);
         lastMoveCoordinates.ChildAdded += ShowSentMove;
         lastMoveCoordinates.ChildChanged += ShowSentMove;
 

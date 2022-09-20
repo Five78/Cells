@@ -9,8 +9,7 @@ public class LobbyFinder : MonoBehaviour
 
     private void Start()
     {
-        FirebaseDatabase.DefaultInstance
-            .GetReference("lobbies").ChildAdded += 
+        LobbyDB.AvailableLobbies.ChildAdded += 
             (object sender, ChildChangedEventArgs args) => { Lobby.Instantiate(args.Snapshot, _lobbyUI, _parent); };
     }
 }
